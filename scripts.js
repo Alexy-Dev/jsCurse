@@ -1,10 +1,33 @@
 "use strict";
-let a = "Alex", g = "Gala";
-console.log(a, g);
+// let a = "Alex", g = "Gala";
+// console.log(a, g);
 
-const answer = prompt("Вам есть 18 лет?", "");
-console.log(answer);
+// const numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?", "");
+// console.log(numberOfFilms);
 
-const numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?", "");
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
 console.log(numberOfFilms);
 
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {
+
+    },
+    actors: {
+
+    },
+    genres: [],
+    privat: false,
+
+};
+
+
+const a = prompt("One from wathed film?", "");
+const b = +prompt("Your rating?", "");
+const c = prompt("One from wathed film?", "");
+const d = +prompt("Your rating?", "");
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
